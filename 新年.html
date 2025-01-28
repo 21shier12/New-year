@@ -1019,12 +1019,7 @@ S.init();
 var nowurl = window.location.href;
 var nowref = document.referrer;
 console.log(nowref);
-if((typeof (data_type) != "undefined" && data_type == 0) || (typeof (vip_type) != "undefined" && vip_type != null && vip_type == 0)) {
-var ua = navigator.userAgent.toLowerCase();
-if (ua.match(/MicroMessenger/i) == "micromessenger" && ua.indexOf("miniprogram") < 1 && nowref.indexOf("code") < 1 && nowref.indexOf("cate") < 1 && nowref.indexOf("new") < 1 && nowurl.indexOf("mp") < 1){
-document.writeln("<script src=\"http://web-file.360ab.cn/static/js/mp-jump.js?v1373\"><\/script>");
-}
-}
+
 
 var _hmt = _hmt || [];
 (function() {
